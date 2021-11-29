@@ -1,5 +1,5 @@
 ﻿body {
-	background-color: #0E1630;
+    background-color: #0E1630;
 }
 
 .navbar-toggler-icon {
@@ -21,7 +21,7 @@
 
 
 .nav-link {
-	color: #808DAD;
+    color: #808DAD;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -39,27 +39,28 @@
 	}
 
 .underline {
-	position: relative;
+    position: relative;
 }
 
-	.underline::before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 0;
-		height: 1px;
+    .underline::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 1px;
 		background-color: #eb4a4a;
-		color: red;
-		transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-	}
+        color: red;
+        transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
 
 @media (hover: hover) and (pointer: fine) {
-	.underline:hover::before {
-		left: 0;
-		right: auto;
-		width: 100%;
-	}
+    .underline:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+        color: red;
+    }
 }
 
 .phone-svg {
