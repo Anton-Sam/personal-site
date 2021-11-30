@@ -4,88 +4,131 @@
 	padding: 0;
 }
 
-body {
+body, html {
 	background-color: #0E1630;
 	color: #808DAD;
 }
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+	nav ul li {
+		list-style-type: none;
+	}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.nav-link{
+
+}
+
+.display-flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-flow: row;
+}
+
+.flex-column {
+	flex-flow: column;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-space-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.color-gray {
+	color: #808DAD;
+}
+
+.mx-3 {
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+
+/*nav ul {
+	display: flex;
+	flex-flow: row;
+}
+*/
+
+
+
 
 .navbar-toggler-icon {
 	background-image: url("../img/icons/burger.svg");
 }
 
-	.navbar-toggler:focus,
-	.navbar-toggler:active,
-	.navbar-toggler-icon:focus {
-		outline: none;
-		box-shadow: none;
-	}
-
 .vl {
 	background-color: #808DAD;
 	width: 2px;
-	height:20px;
+	height: 20px;
 }
 
-.nav-link {
-    color: #808DAD;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-	padding-right: 0;
-	padding-left: 0;
-}
-
-	.nav-link:hover {
-		color: #eb4a4a;
-	}
-
-	.nav-link:focus {
-		color: #eb4a4a;
-	}
 
 .underline {
-    position: relative;
+	position: relative;
 }
 
-    .underline::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 0;
-        height: 1px;
+	.underline::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 0;
+		height: 1px;
 		background-color: #eb4a4a;
-        color: red;
-        transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-    }
+		color: red;
+		transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+	}
 
 @media (hover: hover) and (pointer: fine) {
-    .underline:hover::before {
-        left: 0;
-        right: auto;
-        width: 100%;
-        color: red;
-    }
+	.underline:hover::before {
+		left: 0;
+		right: auto;
+		width: 100%;
+		color: red;
+	}
 }
 
 .phone-svg {
 	width: 15px;
-	height:15px;
+	height: 15px;
 	background-image: url("../img/icons/phone.svg");
+	background-repeat: no-repeat;
 }
 
-h1{
-	color:white;
-	font-size:2rem;
+h1 {
+	color: white;
+	font-size: 2rem;
 }
 
-.test{
-	display:inline-block;
-}
 
-@media screen and (min-width: 576px){
-	h1{
-		font-size:3rem;
+@media screen and (min-width: 576px) {
+	h1 {
+		font-size: 3rem;
 	}
 }
 
