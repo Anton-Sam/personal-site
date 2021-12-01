@@ -16,14 +16,21 @@ a {
 nav {
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
+	white-space:nowrap;
 }
-		box-shadow: none;
 	nav ul li {
 		list-style-type: none;
 	}
 
+hr {
+	height: 1px;
+	background-color: #808DAD;
+	border: none;
+	opacity:0.4;
+}
+
 .container {
-	width: 1140px;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -57,31 +64,20 @@ nav {
 
 .w-100 {
 	width: 100%;
-	width: 2px;
-	height:20px;
+}
+
 .color-gray {
 	color: #808DAD;
+}
+
 .nav-link {
-    color: #808DAD;
-.mx-3 {
+	color: #808DAD;
+}
+
+.mx-1 {
 	margin-right: 1rem;
 	margin-left: 1rem;
 }
-
-/*nav ul {
-	display: flex;
-	flex-flow: row;
-	padding-right: 0;
-*/
-
-
-
-	padding-left: 0;
-.navbar-toggler-icon {
-	background-image: url("../img/icons/burger.svg");
-}
-		color: #eb4a4a;
-	}
 
 .vl {
 	background-color: #808DAD;
@@ -89,22 +85,13 @@ nav {
 	height: 20px;
 }
 
-
-.underline {
-	position: relative;
+.col-2, .col-1, .col-md-2{
+	display:grid;
 }
 
-	.underline::before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 0;
-		height: 1px;
-		background-color: #eb4a4a;
-		color: red;
-		transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-	}
+.col-2{
+	grid-template-columns:1fr 1fr;
+}
 
 @media (hover: hover) and (pointer: fine) {
 	.underline:hover::before {
@@ -129,30 +116,70 @@ h1 {
 
 
 @media screen and (min-width: 576px) {
+	.container {
+		width: 540px;
+	}
+
 	h1 {
 		font-size: 3rem;
 	}
 }
 
-@media screen and (min-width: 576px) {
-	h1 {
-		font-size: 4rem;
-	}
-}
-
 @media screen and (min-width: 768px) {
+	.col-md-2{
+		grid-template-columns:1fr 1fr;
+	}
+
+	.container {
+		width: 720px;
+	}
+
 	h1 {
 		font-size: 4.5rem;
 	}
+
+	.underline {
+		position: relative;
+	}
+
+		.underline::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 0;
+			height: 1px;
+			background-color: #eb4a4a;
+			color: red;
+			transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+		}
 }
 
 @media screen and (min-width: 992px) {
+	.container {
+		width: 960px;
+	}
+	
 	h1 {
 		font-size: 5rem;
 	}
 }
 
 @media screen and (min-width: 1200px) {
+	.container {
+		width: 1140px;
+	}
+
+	h1 {
+		font-size: 5.5rem;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.container {
+		width: 1320px;
+	}
+	
 	h1 {
 		font-size: 5.5rem;
 	}
