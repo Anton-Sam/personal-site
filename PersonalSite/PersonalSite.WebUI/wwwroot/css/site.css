@@ -7,6 +7,7 @@
 body, html {
 	background-color: #0E1630;
 	color: #808DAD;
+	height:100%;
 }
 
 a {
@@ -29,6 +30,10 @@ nav {
 	opacity:0.4;
 }
 
+.logo{
+	height:40px;
+}
+
 .text-hr{
 	display:inline-block;
 	width:25px;
@@ -37,7 +42,8 @@ nav {
 .container {
 	width: 100%;
 	margin: 0 auto;
-	position:relative;
+	position: relative;
+	height: calc(100% - 88px);
 }
 
 .nav-link{
@@ -82,6 +88,10 @@ nav {
 
 .color-gray {
 	color: #808DAD;
+}
+
+.color-red {
+	color: #eb4a4a;
 }
 
 .nav-link {
