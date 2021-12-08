@@ -10,16 +10,16 @@
 
 </head>
 
-<body>
+<body class="bg">
     <header>
         <nav>
             <div class="container">
                 <div class="display-flex flex-row">
                     <div class="display-flex flex-row justify-content-space-between w-100">
                         <div>
-                            <a href="#"><img class="logo" src="~/img/logos/logo.svg"/></a>
+                            <a href="#"><img class="logo" src="~/img/logos/logo.svg" /></a>
                         </div>
-                        <div>
+                        <div class="display-flex align-items-center">
                             <ul class="display-flex flex-row">
                                 <li>
                                     <a class="mx-1 color-gray underline" asp-controller="Home" asp-action="Index">Home</a>
@@ -33,10 +33,11 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="mx-1 vl"></div>
-                    <div class="mx-1 phone-svg"> </div>
-                    <span class="color-red">+375 29 754 68 23</span>
+                    <div class="display-flex align-items-center">
+                        <div class="mx-1 vl"></div>
+                        <div class="mx-1 phone-svg"> </div>
+                        <span class="color-red">+375 29 754 68 23</span>
+                    </div>
                 </div>
             </div>
         </nav>
