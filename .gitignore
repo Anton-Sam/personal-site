@@ -361,4 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/PersonalSite/PersonalSite.WebUI/wwwroot/lib/bootstrap
+/PersonalSite/PersonalSite.WebUI/wwwroot/lib
+
